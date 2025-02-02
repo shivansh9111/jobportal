@@ -27,6 +27,9 @@ const PORT = process.env.PORT || 6000;
 
 
 // api's
+app.use('/',(res,res)=>
+res.send("hello shivansh"))
+
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/company", companyRoute);
 app.use("/api/v1/job", jobRoute);
